@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A special Valentine's Day message">
+    <title>Will You Be My Valentine? 💕</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Floating Hearts Background -->
+    <div class="hearts-background">
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+    </div>
+
+    <!-- Page 0: Loader -->
+    <section class="loader active" id="loader">
+        <div class="loader-content">
+            <div class="heart-pulse">
+                <svg viewBox="0 0 32 29.6" class="heart-icon">
+                    <path d="M23.6,0c-3.4,0-6.3,2.7-7.6,5.6C14.7,2.7,11.8,0,8.4,0C3.8,0,0,3.8,0,8.4c0,9.4,9.5,11.9,16,21.2
+                    c6.1-9.3,16-12.1,16-21.2C32,3.8,28.2,0,23.6,0z"/>
+                </svg>
+            </div>
+            <p class="loader-text">Loading a little love...</p>
+        </div>
+    </section>
+
+    <!-- Page 1: Landing / Hero -->
+    <section class="landing" id="landing">
+        <div class="landing-content">
+            <div class="sparkle sparkle-1">✨</div>
+            <div class="sparkle sparkle-2">💫</div>
+            <div class="sparkle sparkle-3">⭐</div>
+
+            <h1 class="hero-title fade-in">
+                <span class="name-highlight">Sarah</span>, you're one in a million.
+            </h1>
+            <p class="hero-subtitle fade-in-delay">Tap to begin something special</p>
+
+            <button class="continue-btn fade-in-delay-2" onclick="app.nextPage()">
+                <span>Begin</span>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+        </div>
+    </section>
+
+    <!-- Page 2: Our Story -->
+    <section class="our-story" id="our-story">
+        <div class="container">
+            <h2 class="section-title">Our Story</h2>
+            <p class="section-subtitle">The moments that led us here</p>
+
+            <div class="story-grid">
+                <div class="story-card">
+                    <div class="photo-frame">
+                        <img src="assets/photo1.jpg" alt="Our first coffee together" class="story-photo">
+                        <div class="photo-overlay"></div>
+                    </div>
+                    <div class="story-caption">
+                        <h3>First Coffee</h3>
+                        <p>When I realized you were different</p>
+                        <span class="story-date">January 2024</span>
+                    </div>
+                </div>
+
+                <div class="story-card">
+                    <div class="photo-frame">
+                        <img src="assets/photo2.jpg" alt="Our adventure together" class="story-photo">
+                        <div class="photo-overlay"></div>
+                    </div>
+                    <div class="story-caption">
+                        <h3>The Adventure</h3>
+                        <p>We got lost but found each other</p>
+                        <span class="story-date">March 2024</span>
+                    </div>
+                </div>
+
+                <div class="story-card">
+                    <div class="photo-frame">
+                        <img src="assets/photo3.jpg" alt="Our silly moment" class="story-photo">
+                        <div class="photo-overlay"></div>
+                    </div>
+                    <div class="story-caption">
+                        <h3>The Silly One</h3>
+                        <p>That joke only we understand</p>
+                        <span class="story-date">June 2024</span>
+                    </div>
+                </div>
+
+                <div class="story-card">
+                    <div class="photo-frame">
+                        <img src="assets/photo4.jpg" alt="Our recent moment" class="story-photo">
+                        <div class="photo-overlay"></div>
+                    </div>
+                    <div class="story-caption">
+                        <h3>Right Now</h3>
+                        <p>Every moment keeps getting better</p>
+                        <span class="story-date">December 2024</span>
+                    </div>
+                </div>
+            </div>
+
+            <button class="next-btn" onclick="app.nextPage()">
+                Next
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+        </div>
+    </section>
+
+    <!-- Page 3: Reasons -->
+    <section class="reasons" id="reasons">
+        <div class="container">
+            <h2 class="section-title">Why You?</h2>
+            <p class="section-subtitle">A few reasons I want you as my Valentine</p>
+
+            <div class="reasons-list">
+                <div class="reason-card">
+                    <div class="reason-icon">💫</div>
+                    <h3>You Laugh at My Jokes</h3>
+                    <p>Even the terrible ones. Especially the terrible ones.</p>
+                </div>
+
+                <div class="reason-card">
+                    <div class="reason-icon">💭</div>
+                    <h3>You're My First Thought</h3>
+                    <p>You're the first person I want to tell everything to—good news, bad news, random thoughts at 2 AM.</p>
+                </div>
+
+                <div class="reason-card">
+                    <div class="reason-icon">✨</div>
+                    <h3>You Make Everything Special</h3>
+                    <p>Ordinary days feel extraordinary when I'm with you.</p>
+                </div>
+
+                <div class="reason-card">
+                    <div class="reason-icon">🌟</div>
+                    <h3>You Get Me</h3>
+                    <p>In a way no one else does. And you still stick around.</p>
+                </div>
+
+                <div class="reason-card">
+                    <div class="reason-icon">💝</div>
+                    <h3>You're Simply You</h3>
+                    <p>And that's more than enough. That's everything.</p>
+                </div>
+            </div>
+
+            <button class="next-btn" onclick="app.nextPage()">
+                Next
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+        </div>
+    </section>
+
+    <!-- Page 4: The Ask -->
+    <section class="ask" id="ask">
+        <div class="ask-card">
+            <div class="profile-header">
+                <div class="profile-avatar">
+                    <div class="avatar-ring"></div>
+                    <div class="avatar-inner">💕</div>
+                </div>
+                <div class="profile-info">
+                    <div class="profile-handle">@sarah.insta</div>
+                    <div class="profile-tagline">WHERE IS MY VALENTINE</div>
+                </div>
+            </div>
+
+            <div class="question-content">
+                <h2 class="big-question">
+                    <span class="name-highlight">Sarah</span>, will you be my Valentine?
+                </h2>
+
+                <div class="buttons-container">
+                    <button class="yes-btn" id="yesBtn" onclick="app.handleYes()">
+                        <span>Yes! 💕</span>
+                        <div class="btn-shine"></div>
+                    </button>
+
+                    <button class="no-btn" id="noBtn" onclick="app.handleNo()">
+                        <span id="noText">No</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Error Modal for "No" click -->
+        <div class="error-modal" id="errorModal">
+            <div class="error-content">
+                <div class="error-icon">⚠️</div>
+                <h3>Error 404</h3>
+                <p>"No" option not found</p>
+                <small>This option is currently under maintenance. Please try "Yes" instead! 💝</small>
+                <button class="error-close" onclick="app.closeError()">Got it!</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Page 5: Thank You -->
+    <section class="thank-you" id="thank-you">
+        <div class="container celebration-container">
+            <div class="yay-message">
+                <h1 class="yay-title">YaY! 🎉</h1>
+                <p class="yay-subtitle">She said yes!</p>
+            </div>
+
+            <div class="special-photo-container">
+                <div class="special-photo-frame">
+                    <img src="assets/special.jpg" alt="Our special moment" class="special-photo">
+                    <div class="photo-hearts">
+                        <span class="photo-heart">💕</span>
+                        <span class="photo-heart">💕</span>
+                        <span class="photo-heart">💕</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="witty-message">
+                <p class="witty-text">I knew you couldn't resist me! 😏</p>
+                <p class="celebration-date">Valentine's Day 2025 just got a whole lot better ❤️</p>
+            </div>
+
+            <div class="share-section">
+                <button class="share-btn" onclick="app.shareLink()">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M15 6.66667C16.3807 6.66667 17.5 5.54738 17.5 4.16667C17.5 2.78595 16.3807 1.66667 15 1.66667C13.6193 1.66667 12.5 2.78595 12.5 4.16667C12.5 5.54738 13.6193 6.66667 15 6.66667Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M5 12.5C6.38071 12.5 7.5 11.3807 7.5 10C7.5 8.61929 6.38071 7.5 5 7.5C3.61929 7.5 2.5 8.61929 2.5 10C2.5 11.3807 3.61929 12.5 5 12.5Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M15 18.3333C16.3807 18.3333 17.5 17.214 17.5 15.8333C17.5 14.4526 16.3807 13.3333 15 13.3333C13.6193 13.3333 12.5 14.4526 12.5 15.8333C12.5 17.214 13.6193 18.3333 15 18.3333Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M7.15833 11.175L12.85 14.6583" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M12.8417 5.34167L7.15833 8.825" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    Share This Moment
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Confetti Canvas -->
+    <canvas id="confettiCanvas"></canvas>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
