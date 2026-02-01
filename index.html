@@ -205,14 +205,16 @@
             </div>
         </div>
 
-        <!-- Error Modal for "No" click -->
+        <!-- Popup Modal for "No" click -->
         <div class="error-modal" id="errorModal">
             <div class="error-content">
-                <div class="error-icon">⚠️</div>
-                <h3>Error 404</h3>
-                <p>"No" option not found</p>
-                <small>This option is currently under maintenance. Please try "Yes" instead! 💝</small>
-                <button class="error-close" onclick="app.closeError()">Got it!</button>
+                <div class="popup-photo-container">
+                    <img src="assets/no-popup.jpg" alt="Seriously?" class="popup-photo">
+                </div>
+                <h3>Seriously?!</h3>
+                <p>You really thought you could escape? 😏</p>
+                <small>Come on, you know you want to click "Yes"! Don't make me beg... 💝</small>
+                <button class="error-close" onclick="app.closeError()">Fine, I'll click Yes!</button>
             </div>
         </div>
     </section>

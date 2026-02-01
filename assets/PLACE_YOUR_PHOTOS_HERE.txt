@@ -1,12 +1,13 @@
 📸 Place Your Photos Here
 
-Add the following 5 photos to this folder:
+Add the following 6 photos to this folder:
 
 1. photo1.jpg - First coffee/meeting moment
 2. photo2.jpg - Adventure together
 3. photo3.jpg - Silly/funny moment
 4. photo4.jpg - Recent photo
 5. special.jpg - ONE special photo for the final celebration page (the best one!)
+6. no-popup.jpg - A funny/witty photo for when they try to click "No" (maybe a funny face, meme-worthy moment, or playful photo)
 
 Image recommendations:
 - Format: JPG or WebP
