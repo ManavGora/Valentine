@@ -30,6 +30,7 @@ const app = {
     // Navigate to next page
     nextPage() {
         const currentSection = document.getElementById(this.pages[this.currentPage]);
+        console.log('Current section:', this.pages[this.currentPage], currentSection);
 
         if (currentSection) {
             currentSection.classList.remove('active');
@@ -39,12 +40,18 @@ const app = {
 
         if (this.currentPage < this.pages.length) {
             const nextSection = document.getElementById(this.pages[this.currentPage]);
+            console.log('Next section:', this.pages[this.currentPage], nextSection);
             if (nextSection) {
                 nextSection.classList.add('active');
+                console.log('Successfully activated:', this.pages[this.currentPage]);
 
                 // Scroll to top smoothly
                 window.scrollTo({ top: 0, behavior: 'smooth' });
+            } else {
+                console.error('Next section not found!');
             }
+        } else {
+            console.log('Already at last page');
         }
     },
 
@@ -142,6 +149,7 @@ const app = {
     // Handle "Yes" button click
     handleYes() {
         console.log('💕 She said YES!');
+        console.log('Current page before navigation:', this.currentPage);
 
         // Trigger confetti
         this.triggerConfetti();
@@ -156,8 +164,10 @@ const app = {
 
         // Navigate to thank you page after confetti
         setTimeout(() => {
+            console.log('Navigating to thank you page...');
             this.nextPage();
-        }, 2000);
+            console.log('Current page after navigation:', this.currentPage);
+        }, 1500);
     },
 
     // Handle "No" button click (if they manage to click it)
