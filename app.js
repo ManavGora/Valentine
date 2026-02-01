@@ -205,35 +205,26 @@ const app = {
 
         const duration = 3000;
         const end = Date.now() + duration;
-
-        // Heart shapes for confetti
-        const heart = confetti.shapeFromPath({
-            path: 'M167,72.8c2.9-17.9-4.1-35.6-19.1-47.8c-31.5-25.7-77.1-1-77.1,40c0,0-0.1,0-0.1,0 c0-41-45.6-65.6-77.1-40C-21.3,37.2-28.2,54.9-25.4,72.8c5.1,32.2,58.6,77.6,87.1,102.2c3.5,3,8.1,4.7,12.9,4.7s9.4-1.6,12.9-4.7 C116,150.4,169.4,105,167,72.8z',
-            matrix: [0.03333, 0, 0, 0.03333, -5.566, -5.833]
-        });
-
         const colors = ['#E91E63', '#FF4081', '#F48FB1', '#FF80AB'];
 
-        // Launch confetti repeatedly
+        // Launch confetti repeatedly from both sides
         (function frame() {
             confetti({
-                particleCount: 3,
+                particleCount: 5,
                 angle: 60,
                 spread: 55,
                 origin: { x: 0 },
                 colors: colors,
-                shapes: [heart],
-                scalar: 2
+                scalar: 1.2
             });
 
             confetti({
-                particleCount: 3,
+                particleCount: 5,
                 angle: 120,
                 spread: 55,
                 origin: { x: 1 },
                 colors: colors,
-                shapes: [heart],
-                scalar: 2
+                scalar: 1.2
             });
 
             if (Date.now() < end) {
@@ -241,7 +232,7 @@ const app = {
             }
         }());
 
-        // Also add some regular confetti
+        // Also add some big burst confetti
         confetti({
             particleCount: 100,
             spread: 70,
