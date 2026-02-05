@@ -4,7 +4,7 @@
 
 const app = {
     currentPage: 0,
-    pages: ['loader', 'landing', 'our-story', 'reasons', 'ask', 'thank-you'],
+    pages: ['loader', 'landing', 'our-story', 'more-memories', 'reasons', 'ask', 'thank-you'],
     noButtonEscapes: 0,
     maxEscapes: 4,
 
@@ -77,14 +77,14 @@ const app = {
 
         // Mouse move event
         document.addEventListener('mousemove', (e) => {
-            if (this.currentPage === 4 && this.noButtonEscapes < this.maxEscapes) {
+            if (this.currentPage === 5 && this.noButtonEscapes < this.maxEscapes) {
                 this.handleNoButtonProximity(noBtn, e.clientX, e.clientY);
             }
         });
 
         // Touch move event for mobile
         document.addEventListener('touchmove', (e) => {
-            if (this.currentPage === 4 && this.noButtonEscapes < this.maxEscapes) {
+            if (this.currentPage === 5 && this.noButtonEscapes < this.maxEscapes) {
                 const touch = e.touches[0];
                 this.handleNoButtonProximity(noBtn, touch.clientX, touch.clientY);
             }
@@ -281,7 +281,7 @@ const app = {
                 e.target.tagName !== 'TEXTAREA' &&
                 !e.target.classList.contains('yes-btn')) {
 
-                if (this.currentPage > 0 && this.currentPage < 4) {
+                if (this.currentPage > 0 && this.currentPage < 5) {
                     e.preventDefault();
                     this.nextPage();
                 }

@@ -1,13 +1,26 @@
 📸 Place Your Photos Here
 
-Add the following 6 photos to this folder:
+Add the following 14 photos to this folder:
 
+--- "Our Story" page (4 photos) ---
 1. photo1.jpg - First coffee/meeting moment
 2. photo2.jpg - Adventure together
 3. photo3.jpg - Silly/funny moment
 4. photo4.jpg - Recent photo
-5. special.jpg - ONE special photo for the final celebration page (the best one!)
-6. no-popup.jpg - A funny/witty photo for when they try to click "No" (maybe a funny face, meme-worthy moment, or playful photo)
+
+--- "More Memories" page (8 photos) ---
+5.  moment1.jpg - Memory 1
+6.  moment2.jpg - Memory 2
+7.  moment3.jpg - Memory 3
+8.  moment4.jpg - Memory 4
+9.  moment5.jpg - Memory 5
+10. moment6.jpg - Memory 6
+11. moment7.jpg - Memory 7
+12. moment8.jpg - Memory 8
+
+--- Other ---
+13. special.jpg  - ONE special photo for the final celebration page (the best one!)
+14. no-popup.jpg - A funny/witty photo for when they try to click "No"
 
 Image recommendations:
 - Format: JPG or WebP
